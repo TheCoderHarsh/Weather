@@ -9,8 +9,24 @@ body{
    min-height: 100vh;
    align-items: center;
    justify-content: center;
-   background-color: rgb(86, 11, 165);
+   background-color:  background: linear-gradient(130deg, #00deff, #ff009f, #ff009f);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 14s ease infinite;
+    animation: AnimationName 14s ease infinite;
 }
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:1% 0%}
+    50%{background-position:99% 100%}
+    100%{background-position:1% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:1% 0%}
+    50%{background-position:99% 100%}
+    100%{background-position:1% 0%}
+};
+
 .wrapper{
    width: 400px;
    border-radius: 7px;
